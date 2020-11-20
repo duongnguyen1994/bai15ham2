@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+</head>
+<body>
+    <script>
+        function searchChomsao(star){
+            let sao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe','Regulus'];
+            let chomsao = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+            for(let i = 0; i<sao.length;i++){
+                if (star == sao[i]){
+                    alert(`${star} thuộc chòm ${chomsao[i]}`);
+                    break;
+                }
+                if(i = sao.length -1){
+                    alert(`${star} không thuộc chòm sao nào`)
+                }
+            }
+        }
+        searchChomsao(prompt('Nhập tên ngôi sao'));
+    </script>
+</body>
+</html>
