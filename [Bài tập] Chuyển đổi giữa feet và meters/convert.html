@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Bài tập] Chuyển đổi giữa feet và meters</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <h3>Feet</h3>
+                </th>
+                <th>
+                    <h3>Meters</h3>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="number" id="feet" style="width: 70%;" oninput="footToMeter(this.value)">
+                </td>
+                <td>
+                    <p><span id="toMeters"></span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <h3>Meters</h3>
+                </th>
+                <th>
+                    <h3>Feet</h3>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="number" id="feet" style="width: 70%;" oninput="meterToFoot(this.value)">
+                </td>
+                <td>
+                    <p><span id="toFeet"></span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function footToMeter(foot) {
+            let meter = 0.305 * foot;
+            document.getElementById('toMeters').innerHTML = meter;
+        }
+        function meterToFoot(meter) {
+            let foot = 3.279 * meter;
+            document.getElementById('toFeet').innerHTML = foot;
+        }
+    </script>
+</body>
+
+</html>
