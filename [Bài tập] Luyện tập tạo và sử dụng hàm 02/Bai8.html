@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 8</title>
+</head>
+<body>
+    <script>
+        function createAndShowArrayReverse(size){
+            let arr = [];
+            for(let i =0;i<size;i++){
+                do{
+                    arr[i] = Number(prompt('Nhập giá trị phần tử của mảng'))
+                }while(isNaN(arr[i]) || !Number.isInteger(arr[i]))
+            }
+            document.write(`Mảng trước khi đảo ${arr.join()}`)
+            document.write(`Mảng sau khi đảo ${arr.reverse().join()}`)
+        }
+        createAndShowArrayReverse(10);
+    </script>
+</body>
+</html>

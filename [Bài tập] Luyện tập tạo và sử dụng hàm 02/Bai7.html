@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7</title>
+</head>
+
+<body>
+    <script>
+        let arr = []
+        for (let i = 0; i < 2; i++) {
+            do {
+                arr[i] = Number(prompt('Nhập vào số nguyên'))
+            } while (isNaN(arr[i]) || !Number.isInteger(arr[i]))
+        }
+        document.write(`Trước khi đổi vị trí ${arr.join()}<br>`);
+        function changePos(a,b){
+            document.write(`Sau khi đổi vị trí ${b},${a}`);
+        }
+        changePos(arr[0],arr[1]);
+    </script>
+</body>
+
+</html>

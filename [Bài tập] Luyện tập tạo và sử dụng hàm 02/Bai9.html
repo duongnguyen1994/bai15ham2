@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 9</title>
+</head>
+<body>
+    <script>
+        function createArray(size){
+            let arr = [];
+            for(let i =0; i<size;i++){
+                arr[i] = prompt('Nhâp giá trị các phần tử của mảng')
+            } 
+            return arr;
+        }
+
+        function createChar(){
+            let char = prompt('Nhập ký tự bất kì');
+            return char;
+        }
+
+        function checkChar(arr,char,size){
+            let count = 0;
+            for(let i = 0; i<size;i++){
+                if(arr[i] == char){
+                    count++;
+                }
+            }
+            if(count>0){
+                document.write(`Trùng với ${count} phần tử`)
+            } else document.write(-1)
+        }
+        
+        checkChar(createArray(10),createChar(),10);
+    </script>
+</body>
+</html>
