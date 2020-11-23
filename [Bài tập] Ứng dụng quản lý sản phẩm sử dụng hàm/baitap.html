@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng quản lý</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <thead>
+                <tr align="left">
+                    <th>Add New Product</th>
+                </tr>
+                <tr>
+                    <th colspan="2"><input type="text" id="items" placeholder="New Product" style="width: 120%;"></th>
+                    <th><input type="button" value="Add" id="add" onclick="main()"></th>
+                </tr>
+                <tr>
+                    <th align="left">Display All Product</th>
+                </tr>
+                <tr>
+                    <th colspan="3" align="left">Product name</th>
+                    <th id="product">0</th>
+                </tr>
+            </thead>
+            <tbody id="showItems">            
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
+<script src="function.js"></script>
